@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hoàng Gia Khải | Data Analyst Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    padding:100px 0;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    max-width:650px;
+}
+
+.hero-text h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero-text h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:1.1rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 24px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+}
+
+.profile-img{
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #38bdf8;
+}
+
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2.2rem;
+    color:#0f172a;
+}
+
+.about{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.skill-card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-5px);
+}
+
+.skill-card h3{
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+}
+
+.project-img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:20px;
+}
+
+.project-content h3{
+    margin-bottom:10px;
+}
+
+.project-content p{
+    margin-bottom:15px;
+}
+
+.tech{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.tech span{
+    background:#e0f2fe;
+    color:#0369a1;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+.experience{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:#0ea5e9;
+    text-decoration:none;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero{
+    text-align:center;
+    flex-direction:column-reverse;
+}
+
+.profile-img{
+    margin-bottom:30px;
+}
+
+.hero-text h1{
+    font-size:2.2rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+
+<div class="hero">
+
+<div class="hero-text">
+<h1>Hoàng Gia Khải</h1>
+<h2>Data Analyst | Power BI | SQL | Python</h2>
+
+<p>
+Biến dữ liệu thành những insight giúp doanh nghiệp đưa ra quyết định
+nhanh hơn, chính xác hơn và hiệu quả hơn.
+</p>
+
+<a href="#projects" class="btn">Xem dự án</a>
+</div>
+
+<img src="https://via.placeholder.com/300"
+class="profile-img"
+alt="Profile">
+
+</div>
+
+</div>
+</header>
+
+<section id="about">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Giới Thiệu</h2>
+</div>
+
+<div class="about">
+<p>
+Tôi là Data Analyst với kinh nghiệm làm việc cùng SQL, Power BI,
+Excel và Python. Tôi tập trung vào việc xây dựng dashboard,
+phân tích KPI, doanh thu, hành vi người dùng và tối ưu hiệu suất
+kinh doanh thông qua dữ liệu.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Kỹ Năng</h2>
+</div>
+
+<div class="skills">
+
+<div class="skill-card">
+<h3>Data Analysis</h3>
+<p>SQL Server, MySQL, PostgreSQL, BigQuery</p>
+</div>
+
+<div class="skill-card">
+<h3>Visualization</h3>
+<p>Power BI, Tableau, Excel Dashboard</p>
+</div>
+
+<div class="skill-card">
+<h3>Programming</h3>
+<p>Python, Pandas, NumPy, Matplotlib</p>
+</div>
+
+<div class="skill-card">
+<h3>Analytics</h3>
+<p>ARPU, ARPPU, Retention, Funnel, Cohort Analysis</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Dự Án Nổi Bật</h2>
+</div>
+
+<div class="projects">
+
+<div class="project-card">
+
+<img src="profile.png"
+     class="profile-img"
+     alt="Hoàng Gia Khải">
+
+<div class="project-content">
+
+<h3>Game Revenue Dashboard</h3>
+
+<p>
+Dashboard theo dõi Revenue, DAU, MAU, ARPU,
+ARPPU và Session của game mobile.
+</p>
+
+<div class="tech">
+<span>Power BI</span>
+<span>SQL</span>
+<span>DAX</span>
+</div>
+
+</div>
+</div>
+
+<div class="project-card">
+
+<img
+src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200"
+class="project-img">
+
+<div class="project-content">
+
+<h3>User Retention Analysis</h3>
+
+<p>
+Phân tích Retention D1, D7, D30 và Churn Rate
+của người dùng.
+</p>
+
+<div class="tech">
+<span>SQL</span>
+<span>Python</span>
+<span>Power BI</span>
+</div>
+
+</div>
+</div>
+
+<div class="project-card">
+
+<img src="profile.png"
+     class="profile-img"
+     alt="Hoàng Gia Khải">
+
+<div class="project-content">
+
+<h3>E-Commerce Dashboard</h3>
+
+<p>
+Theo dõi doanh thu, khách hàng, sản phẩm và
+hiệu quả bán hàng.
+</p>
+
+<div class="tech">
+<span>Power BI</span>
+<span>SQL</span>
+<span>Excel</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+<h2>Kinh Nghiệm</h2>
+</div>
+
+<div class="experience">
+
+<h3>Data Analyst Intern</h3>
+
+<p><strong>2025 - Nay</strong></p>
+
+<ul>
+<li>Xây dựng Power BI Dashboard tự động.</li>
+<li>Viết SQL truy xuất dữ liệu lớn.</li>
+<li>Theo dõi KPI sản phẩm.</li>
+<li>Phân tích doanh thu và hành vi người dùng.</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Liên Hệ</h2>
+</div>
+
+<div class="contact">
+
+<p>Email: your.email@gmail.com</p>
+<p>LinkedIn: linkedin.com/in/yourprofile</p>
+<p>GitHub: github.com/yourgithub</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Hoàng Gia Khải | Data Analyst Portfolio</p>
+</footer>
+
+</body>
+</html>
