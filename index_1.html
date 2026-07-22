@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+Hoàng Gia Khải | Data Analyst Portfolio
+</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<style>
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+body{
+
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.6;
+
+}
+
+
+
+.container{
+
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+
+}
+
+
+
+/* HEADER */
+
+header{
+
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    padding:90px 0;
+
+}
+
+
+
+.hero{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+    flex-wrap:wrap;
+
+}
+
+
+
+.hero-text{
+
+    max-width:650px;
+
+}
+
+
+
+.hero-text h1{
+
+    font-size:3rem;
+    margin-bottom:15px;
+
+}
+
+
+
+.hero-text h2{
+
+    color:#38bdf8;
+    margin-bottom:20px;
+
+}
+
+
+
+.hero-text p{
+
+    font-size:18px;
+    margin-bottom:30px;
+
+}
+
+
+
+.btn{
+
+    display:inline-block;
+
+    padding:12px 25px;
+
+    background:#38bdf8;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+    background:#0284c7;
+
+}
+
+
+
+
+.profile-img{
+
+    width:280px;
+    height:280px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:6px solid #38bdf8;
+
+}
+
+
+
+/* SECTION */
+
+section{
+
+    padding:80px 0;
+
+}
+
+
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.section-title h2{
+
+    font-size:35px;
+
+    color:#0f172a;
+
+}
+
+
+
+
+
+/* ABOUT */
+
+
+.about{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    font-size:17px;
+
+}
+
+
+
+
+
+
+/* SKILLS */
+
+
+.skills{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.skill-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+
+.skill-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.skill-card h3{
+
+    margin-bottom:15px;
+
+    color:#0f172a;
+
+}
+
+
+
+.skill-card p{
+
+    color:#555;
+
+}
+
+
+
+
+
+/* PROJECT AREA */
+
+.projects{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.project-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    display:flex;
+
+    flex-direction:column;
+
+    min-height:650px;
+
+    transition:.3s;
+
+}
+
+
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+
+.project-img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+
+
+
+
+.project-content{
+
+    padding:20px;
+
+    display:flex;
+    flex-direction:column;
+
+    flex:1;
+
+}
+
+
+.project-content h3{
+    margin-bottom:15px;
+}
+
+
+.project-content p{
+    margin-bottom:20px;
+}
+
+
+/* Tag kỹ năng */
+.tech{
+
+    display:flex;
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:auto;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.tech span{
+
+    background:#e0f2fe;
+    color:#0369a1;
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+}
+
+
+
+
+/* Button luôn nằm đáy */
+.project-content .btn{
+
+    align-self:flex-start;
+
+    margin-top:0;
+
+}
+
+
+
+
+
+/* EXPERIENCE */
+
+
+.experience{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+
+
+/* CONTACT */
+
+
+.contact{
+
+    text-align:center;
+
+    font-size:17px;
+
+}
+
+
+.contact a{
+
+    color:#0284c7;
+
+    text-decoration:none;
+
+}
+
+
+
+
+
+footer{
+
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+
+
+
+
+
+
+@media(max-width:900px){
+
+
+.projects{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.hero{
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+
+.hero-text h1{
+
+    font-size:2.2rem;
+
+}
+
+
+
+}
+
+
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<header>
+
+
+<div class="container">
+
+
+<div class="hero">
+
+
+<div class="hero-text">
+
+
+<h1>
+Hoàng Gia Khải
+</h1>
+
+
+<h2>
+Data Analyst | Power BI | SQL | Python
+</h2>
+
+
+
+<p>
+
+Phân tích dữ liệu và xây dựng Dashboard
+giúp doanh nghiệp đưa ra quyết định nhanh hơn,
+chính xác hơn thông qua Business Intelligence.
+
+</p>
+
+
+
+<a href="#projects" class="btn">
+
+Xem dự án
+
+</a>
+
+
+</div>
+
+
+
+<img
+
+src="profile.png"
+
+class="profile-img"
+
+alt="Data Analyst"
+
+>
+
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+<section>
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+Giới Thiệu
+</h2>
+
+</div>
+
+
+
+<div class="about">
+
+
+<p>
+
+Tôi là Data Analyst tập trung vào xử lý dữ liệu,
+xây dựng Dashboard và khai thác insight bằng
+Power BI, SQL và Python.
+
+Tôi có kinh nghiệm thực hiện các dự án về
+Business Intelligence, Product Analytics và
+Data Mining từ làm sạch dữ liệu,
+phân tích KPI đến trực quan hóa dữ liệu.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section>
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+Kỹ Năng
+</h2>
+
+</div>
+
+
+
+
+<div class="skills">
+
+
+
+<div class="skill-card">
+
+<h3>
+Data Analysis
+</h3>
+
+<p>
+SQL Server, MySQL, PostgreSQL, BigQuery
+</p>
+
+</div>
+
+
+
+
+<div class="skill-card">
+
+<h3>
+Visualization
+</h3>
+
+<p>
+Power BI, Tableau, Excel Dashboard
+</p>
+
+</div>
+
+
+
+
+
+<div class="skill-card">
+
+<h3>
+Programming
+</h3>
+
+<p>
+Python, Pandas, NumPy, Matplotlib
+</p>
+
+</div>
+
+
+
+
+
+<div class="skill-card">
+
+<h3>
+Analytics
+</h3>
+
+<p>
+ARPU, ARPPU, Retention, Cohort Analysis, KPI
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+<section id="projects">
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+Dự Án Nổi Bật
+</h2>
+
+</div>
+
+
+
+
+<div class="projects">
+
+
+
+
+
+<!-- PROJECT 1 : LEGO WORKFORCE ANALYTICS -->
+
+
+<div class="project-card">
+
+
+<img
+
+src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200"
+
+class="project-img"
+
+alt="LEGO Workforce Analytics"
+
+>
+
+
+
+<div class="project-content">
+
+
+<h3>
+
+LEGO Workforce Analytics Dashboard
+
+</h3>
+
+
+
+<p>
+
+Phân tích hiệu suất nguồn lực nhân sự thông qua
+Productive Utilisation, Billable Hours,
+Non-Billable Hours, Project Cost và Timesheet Compliance.
+
+Dashboard hỗ trợ theo dõi năng suất,
+chi phí lao động và dự báo xu hướng sử dụng nguồn lực.
+
+</p>
+
+
+
+
+<div class="tech">
+
+
+<span>
+Power BI
+</span>
+
+
+<span>
+DAX
+</span>
+
+
+<span>
+Data Modeling
+</span>
+
+
+<span>
+Forecasting
+</span>
+
+
+
+</div>
+
+
+
+
+
+<a
+
+href="https://app.powerbi.com/view?r=eyJrIjoiMTA0YTRkZDMtMWQ1NC00ODEwLThlYmQtNjk3YWIyNThkYmY3IiwidCI6IjVlOGIzMjY5LTc2Y2EtNDU3Yy04NDdmLTQ0NGUzZGI5ODZhNyIsImMiOjl9"
+
+target="_blank"
+
+class="btn"
+
+>
+
+View Dashboard
+
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- PROJECT 2 : MOBILE GAME ANALYTICS -->
+
+
+
+<div class="project-card">
+
+
+
+<img
+
+src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1200"
+
+class="project-img"
+
+alt="Mobile Game Analytics"
+
+>
+
+
+
+
+
+<div class="project-content">
+
+
+
+<h3>
+
+Mobile Game Analytics Dashboard
+
+</h3>
+
+
+
+
+<p>
+
+Xây dựng dashboard phân tích hiệu quả hoạt động
+của game mobile thông qua Revenue, DAU, MAU,
+ARPU, ARPPU, Session và Retention.
+
+Phân tích hành trình người dùng,
+mức độ engagement và các Product Metrics
+nhằm tối ưu trải nghiệm người chơi.
+
+</p>
+
+
+
+
+
+<div class="tech">
+
+
+<span>
+Power BI
+</span>
+
+
+<span>
+SQL
+</span>
+
+
+<span>
+DAX
+</span>
+
+
+<span>
+Cohort Analysis
+</span>
+
+
+<span>
+Product Analytics
+</span>
+
+
+
+</div>
+
+
+
+
+
+<a
+
+href="https://app.powerbi.com/view?r=eyJrIjoiZTdjZGZlYWQtNmRiMC00MzE4LTgwNmQtYzU3MzJjMGI2MDNiIiwidCI6IjVlOGIzMjY5LTc2Y2EtNDU3Yy04NDdmLTQ0NGUzZGI5ODZhNyIsImMiOjl9"
+
+target="_blank"
+
+class="btn"
+
+>
+
+View Dashboard
+
+</a>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- PROJECT 3 : MARKET BASKET ANALYSIS -->
+
+
+
+<div class="project-card">
+
+
+
+<img
+
+src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200"
+
+class="project-img"
+
+alt="Market Basket Analysis"
+
+>
+
+
+
+
+
+<div class="project-content">
+
+
+
+<h3>
+
+Market Basket Analysis
+
+</h3>
+
+
+
+
+<p>
+
+Áp dụng thuật toán PCY để tìm Frequent Itemsets
+và xây dựng Association Rules.
+
+Phân tích Support, Confidence và Lift nhằm xác định
+các nhóm sản phẩm thường được mua cùng nhau
+và đưa ra đề xuất Cross-selling.
+
+</p>
+
+
+
+
+
+
+<div class="tech">
+
+
+<span>
+Python
+</span>
+
+
+<span>
+Pandas
+</span>
+
+
+<span>
+PCY Algorithm
+</span>
+
+
+<span>
+Data Mining
+</span>
+
+
+
+</div>
+
+
+
+
+
+<a
+
+href="https://app.powerbi.com/view?r=eyJrIjoiYjViMDliMjMtMzA3OS00NjEzLWJjYzItNDQ5OGNlODIxNTZhIiwidCI6IjVlOGIzMjY5LTc2Y2EtNDU3Yy04NDdmLTQ0NGUzZGI5ODZhNyIsImMiOjl9"
+
+target="_blank"
+
+class="btn"
+
+>
+
+View Dashboard
+
+</a>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+<!-- EXPERIENCE SECTION -->
+
+<section>
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+Kinh Nghiệm
+</h2>
+
+</div>
+
+
+
+
+<div class="experience">
+
+
+<h3>
+Data Analyst Project Experience
+</h3>
+
+
+
+<p>
+
+<strong>
+2025 - Nay
+</strong>
+
+</p>
+
+
+
+
+<ul>
+
+
+<li>
+
+Xây dựng Power BI Dashboard phục vụ phân tích
+Business Performance và theo dõi KPI.
+
+</li>
+
+
+
+<li>
+
+Sử dụng SQL để truy vấn, làm sạch và tổng hợp
+dữ liệu từ nhiều nguồn.
+
+</li>
+
+
+
+<li>
+
+Phân tích hành vi người dùng thông qua
+Retention Analysis, Cohort Analysis và Product Metrics.
+
+</li>
+
+
+
+<li>
+
+Áp dụng Python trong Data Processing,
+Data Mining và Automation.
+
+</li>
+
+
+
+<li>
+
+Trực quan hóa dữ liệu nhằm hỗ trợ
+ra quyết định dựa trên dữ liệu.
+
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- CONTACT SECTION -->
+
+
+<section id="contact">
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+
+<h2>
+
+Liên Hệ
+
+</h2>
+
+
+</div>
+
+
+
+
+
+<div class="contact">
+
+
+<p>
+
+Email:
+
+<a href="mailto:your.email@gmail.com">
+
+khaigia223@gmail.com
+
+</a>
+
+</p>
+
+
+
+
+<p>
+
+LinkedIn:
+
+<a href="#">
+
+https://www.linkedin.com/in/khai-gia-5ba0573a6/
+
+</a>
+
+</p>
+
+
+
+
+
+<p>
+
+GitHub:
+
+<a href="https://github.com/Khagia2511">
+
+github.com/Khagia2511
+
+</a>
+
+</p>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer>
+
+
+<p>
+
+© 2026 Hoàng Gia Khải | Data Analyst Portfolio
+
+</p>
+
+
+</footer>
+
+
+
+
+
+</body>
+
+</html>
